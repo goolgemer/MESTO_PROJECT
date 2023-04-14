@@ -1,0 +1,17 @@
+.cover {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'inter', sans-serif;
+}
+
+.cover::before {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    width: 100%;
+    height: 130%;
+    left: 0;
+    position: absolute;
+    content: "";
+}

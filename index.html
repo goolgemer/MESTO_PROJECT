@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Место</title>
+    <link rel="stylesheet" href="pages/styles.css">
+</head>
+
+<body class="root">
+
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="">
+    </header>
+    <main>
+        <section class="profile">
+            <div class="info">
+                <img src="../images/Avatar.png" alt="Аватар" class="profile__avatar">
+                <div class="info__wrapper">
+                    <div class="info__heading">
+                        <h2 class="info__title">Жак-Ив Кусто</h2>
+                        <button class="info__edit-button"></button>
+                    </div>
+                    <p class="info__subtitle">Исследователь океана</p>
+                </div>
+            </div>
+            <button class="profile__add-button"></button>
+        </section>
+
+        <section class="elements">
+            <div class="element">
+                <img class="element__photo" src="./images/photo1.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Карачаевск</h3>
+                    <button class="element__like"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__photo" src="./images/photo2.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Гора Эльбрус</h3>
+                    <button class="element__like"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__photo" src="./images/photo3.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Домбай</h3>
+                    <button class="element__like"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__photo" src="./images/photo2.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Гора Эльбрус</h3>
+                    <button class="element__like"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__photo" src="./images/photo3.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Домбай</h3>
+                    <button class="element__like"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__photo" src="./images/photo1.png" alt="">
+                <div class="element__discription">
+                    <h3 class="element__header">Карачаевск</h3>
+                    <button class="element__like" onclick="like();"></button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="footer">© 2023 Mesto Russia</p>
+    </footer>
+
+    <div class="popup" hidden>
+        <div class="popup__content">
+            <h4 class="popup__heading">Редактировать профиль</h4>
+            <input value="Жак-Ив Кусто" class="popup__input-name" type="text">
+            <input value="Исследователь океана" class="popup__input-discription" type="text">
+            <button class="popup__button">Сохранить</button>
+        </div>
+        <button class="popup__cross" onclick="close();"></button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
