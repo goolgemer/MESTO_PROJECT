@@ -1,0 +1,17 @@
+.popup-photo__description {
+    max-width: 880px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    margin-top: 10px;
+    align-self: self-start;
+
+}
+
+
+@media screen and (max-width:880px) {
+    .popup-photo__description {
+        margin-left: 0;
+    }
+}

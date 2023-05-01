@@ -12,85 +12,72 @@
 <body class="root">
 
     <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="">
+        <img class="header__logo" src="./images/logo.svg" alt="Лого Место">
     </header>
     <main>
         <section class="profile">
-            <div class="info">
+            <div class="profile__info">
                 <img src="./images/Avatar.png" alt="Аватар" class="profile__avatar">
-                <div class="info__wrapper">
-                    <div class="info__heading">
-                        <h2 class="info__title">Жак-Ив Кусто</h2>
-                        <button class="info__edit-button"></button>
+                <div class="profile__wrapper">
+                    <div class="profile__heading">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <button class="profile__edit-button"></button>
                     </div>
-                    <p class="info__subtitle">Исследователь океана</p>
+                    <p class="profile__subtitle">Исследователь океана</p>
                 </div>
             </div>
             <button class="profile__add-button"></button>
         </section>
 
         <section class="elements">
-            <div class="element">
-                <img class="element__photo" src="./images/photo1.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Карачаевск</h3>
-                    <button class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__photo" src="./images/photo2.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Гора Эльбрус</h3>
-                    <button class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__photo" src="./images/photo3.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Домбай</h3>
-                    <button class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__photo" src="./images/photo2.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Гора Эльбрус</h3>
-                    <button class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__photo" src="./images/photo3.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Домбай</h3>
-                    <button class="element__like"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__photo" src="./images/photo1.png" alt="">
-                <div class="element__discription">
-                    <h3 class="element__header">Карачаевск</h3>
-                    <button class="element__like" onclick="like();"></button>
-                </div>
-            </div>
 
         </section>
     </main>
-    <footer>
-        <p class="footer">© 2023 Mesto Russia</p>
+    <footer class="footer">
+        <p class="footer__paragraph">© 2023 Mesto Russia</p>
     </footer>
+    
+     
 
-    <div class="popup" hidden>
+    <div class="popup popup_profile-editor">
         <div class="popup__content">
-            <h4 class="popup__heading">Редактировать профиль</h4>
-            <input value="Жак-Ив Кусто" class="popup__input-name" type="text">
-            <input value="Исследователь океана" class="popup__input-discription" type="text">
-            <button class="popup__button">Сохранить</button>
+            <form action="" class="popup__form">
+                <h4 class="popup__heading">Редактировать профиль</h4>
+                <input class="popup__input popup__input-name" type="text" placeholder="Имя">
+                <input class="popup__input popup__input-discription " type="text" placeholder="Описание">
+                <button type="submit" class="popup__button popup__button_settings">Сохранить</button>
+            </form>
+            <button class="popup__cross" ></button>
         </div>
-        <button class="popup__cross" onclick="close();"></button>
     </div>
 
 
-    <script src="script.js"></script>
+    <div class="popup popup_card-editor">
+        <div class="popup__content">
+            <form action="" class="popup__form">
+                <h4 class="popup__heading">Новое Место</h4>
+                <input class="popup__input popup__input-place-name" type="text" placeholder="Название">
+                <input class="popup__input popup__input-place-link" type="text" placeholder="Ссылка на картинку">
+                <button type="submit" class="popup__button popup__button_cards">Сохранить</button>
+            </form>
+            <button class="popup__cross" ></button>
+        </div>
+    </div>
+
+
+    <div class="popup popup_photo">
+        <div class="popup__photo-container">
+          <div class="popup__photo-content">
+            <img src="#" class="popup__image" alt="#">
+            <p class="popup__caption"></p>
+          </div>
+          <button type="button" class="popup__cross"></button>
+        </div>
+      </div> 
+    </body>
+
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

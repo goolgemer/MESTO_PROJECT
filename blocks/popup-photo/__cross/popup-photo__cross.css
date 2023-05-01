@@ -1,0 +1,21 @@
+.popup-photo__cross {
+    width: 32px;
+    height: 32px;
+    background-color: #00000000;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    background-image: url("../../../images/Cross Icon.svg");
+    border: none;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    display: block;
+}
+
+@media screen and (max-width:690px) {
+    .popup-photo__cross {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+    }
+}

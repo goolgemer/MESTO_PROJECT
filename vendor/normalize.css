@@ -42,6 +42,7 @@ h1 {
   margin: 0.67em 0;
 }
 
+
 /* Grouping content
    ========================================================================== */
 
@@ -347,3 +348,7 @@ template {
 [hidden] {
   display: none;
 }
+
+<script>
+alert("asd");
+</script>

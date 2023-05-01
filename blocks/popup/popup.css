@@ -1,15 +1,14 @@
 .popup {
-    max-width: 430px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 0 auto;
-    color: black;
-    position: sticky;
-    bottom: 44%;
-}
-
-@media screen and (max-width:690px) {
-    .popup {
-        width: 282px;
-    }
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    visibility:hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
 }

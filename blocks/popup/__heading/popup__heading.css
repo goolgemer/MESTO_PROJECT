@@ -3,9 +3,10 @@
     font-size: 24px;
     line-height: 29px;
     margin: 34px 0 54px 0;
+    color: black;
 }
 
-@media screen and (max-width:690px) {
+@media screen and (max-width:400px) {
     .popup__heading {
         max-width: 238px;
         font-weight: 900;
